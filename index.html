@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TRAX – Driving School Management System (DSMS)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-slate-900">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <!-- LOGO + TEXT -->
+        <div class="flex items-center gap-3">
+          <img src="trax-x-logo.svg" class="h-8 w-auto object-contain" alt="TRAX Logo" />
+          <div class="flex flex-col leading-tight">
+            <span class="text-sm font-semibold text-slate-900">TRAX</span>
+            <span class="text-xs text-slate-500">Driving School Management</span>
+          </div>
+        </div>
+
+        <!-- MENU -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="#features" class="hover:text-slate-900">Features</a>
+          <a href="#modules" class="hover:text-slate-900">Modules</a>
+          <a href="#for-whom" class="hover:text-slate-900">For Driving Schools</a>
+          <a href="#contact" class="hover:text-slate-900">Contact</a>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="hidden md:flex items-center gap-3">
+<a 
+  href="https://google.com" 
+  class="text-sm font-medium text-slate-700 hover:text-slate-900"
+>
+  Log in
+</a>
+<a
+  href="mailto:info@trax.com"
+  class="inline-flex items-center justify-center rounded-full bg-[#3cb650] text-white px-6 py-2.5 text-sm font-semibold shadow-sm hover:bg-[#34a345] transition-colors"
+>
+  Book a Demo
+</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="bg-white">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid gap-12 lg:grid-cols-2 lg:items-center"
+      >
+        <!-- Left content -->
+        <div>
+          <div
+            class="inline-flex items-center gap-2 rounded-full border border-[#e9f8ee] bg-[#f4fbf7] px-3 py-1 text-xs font-medium text-[#3cb650] mb-4"
+          >
+            TRAX – Driving School Management System (DSMS)
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 mb-4">
+            Transform your driving school with a modern, fully digital system.
+          </h1>
+
+          <p class="text-base text-slate-600 mb-6">
+            TRAX is an all-in-one platform for managing driving schools, developed with support from GIZ,
+            designed to modernize and digitalize the entire process, from students, instructors, schedules,
+            payments and reports.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-4">
+            <button
+              class="inline-flex items-center justify-center rounded-full bg-[#3cb650] px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#34a345] transition-colors"
+            >
+              Start Free Trial
+            </button>
+            <button
+              class="inline-flex items-center justify-center rounded-full border border-slate-200 px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-colors"
+            >
+              Book a Live Demo
+            </button>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 text-xs text-slate-500">
+            <div class="flex items-center gap-1.5">
+              <span
+                class="h-4 w-4 rounded-full bg-[#3cb650] text-white flex items-center justify-center text-[10px]"
+                >✓</span
+              >
+              No credit card required
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span
+                class="h-4 w-4 rounded-full bg-[#3cb650] text-white flex items-center justify-center text-[10px]"
+                >✓</span
+              >
+              Setup within 24h
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span
+                class="h-4 w-4 rounded-full bg-[#3cb650] text-white flex items-center justify-center text-[10px]"
+                >✓</span
+              >
+              Support in your language
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Screenshots -->
+        <div class="relative">
+          <!-- Desktop mockup -->
+          <div
+            class="rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60 overflow-hidden"
+          >
+            <div class="h-8 w-full bg-slate-50 flex items-center gap-1 px-4">
+              <span class="h-2.5 w-2.5 rounded-full bg-red-400"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-yellow-400"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
+            </div>
+
+            <!-- HERO DASHBOARD IMAGE -->
+            <img
+              src="traxlogin.jpg"
+              alt="TRAX Dashboard"
+              class="w-full h-[260px] object-cover rounded-b-3xl"
+            />
+          </div>
+
+          <!-- Mobile mockup floating -->
+          <div
+            class="absolute -bottom-6 -right-4 w-40 rounded-3xl border border-slate-200 bg-white shadow-lg overflow-hidden"
+          >
+            <div class="h-5 bg-slate-50"></div>
+            <img
+              src="mobile.jpg"
+              alt="TRAX Mobile App"
+              class="w-full h-56 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / STATS -->
+    <section class="bg-[#f5f7f9]">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col gap-6 md:flex-row md:items-center md:justify-between"
+      >
+        <div>
+          <p class="text-xs font-semibold uppercase text-[#3cb650] mb-1">
+            Trusted by driving schools in the region
+          </p>
+          <p class="text-sm text-slate-600 max-w-md">
+            TRAX has been developed as a multi-year project supported by GIZ, fully aligned with the real
+            needs of driving schools.
+          </p>
+        </div>
+
+        <!-- 3 cards => 3 columns on desktop -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+          <div>
+            <p class="text-xl font-semibold text-slate-900">100%</p>
+            <p class="text-xs text-slate-500">Safe and secure</p>
+          </div>
+          <div>
+            <p class="text-xl font-semibold text-slate-900">70%</p>
+            <p class="text-xs text-slate-500">Less manual work</p>
+          </div>
+          <div>
+            <p class="text-xl font-semibold text-slate-900">24/7</p>
+            <p class="text-xs text-slate-500">Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES OVERVIEW -->
+    <section id="features" class="bg-[#f5f7f9]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div class="max-w-2xl mb-10">
+          <h2 class="text-3xl font-semibold text-slate-900 mb-3">
+            Everything a modern driving school needs.
+          </h2>
+          <p class="text-sm text-slate-600">
+            TRAX covers every step of management, from candidate registration to strategic business reports.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div
+              class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#e9f8ee]"
+            >
+              📊
+            </div>
+            <h3 class="mb-2 text-lg font-semibold text-slate-900">Analytics Dashboard</h3>
+            <p class="text-sm text-slate-600">
+              Clear overview of KPIs, lessons, payments, and daily activity.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div
+              class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#e9f8ee]"
+            >
+              🎓
+            </div>
+            <h3 class="mb-2 text-lg font-semibold text-slate-900">Student Management</h3>
+            <p class="text-sm text-slate-600">
+              Registration, documents, lessons, exams, payments and progress – all in one place.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div
+              class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#e9f8ee]"
+            >
+              🧑‍🏫
+            </div>
+            <h3 class="mb-2 text-lg font-semibold text-slate-900">Instructors & Scheduling</h3>
+            <p class="text-sm text-slate-600">
+              Clear schedules for instructors, assigned students and completed lessons.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div
+              class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#e9f8ee]"
+            >
+              💳
+            </div>
+            <h3 class="mb-2 text-lg font-semibold text-slate-900">Payments & Billing</h3>
+            <p class="text-sm text-slate-600">
+              Installments, invoices, outstanding balances and exportable financial reports.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT PREVIEW – Browser Mockup -->
+    <section id="modules" class="bg-white py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-semibold text-slate-900 mb-3">
+          TRAX – Your Driving School’s Main Control Panel
+        </h2>
+
+        <p class="text-sm text-slate-600 max-w-2xl mx-auto mb-10">
+          A clean, modern and intuitive panel to manage students, instructors, schedules, payments and
+          statistics – all in one place.
+        </p>
+
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-xl overflow-hidden mx-auto max-w-5xl">
+          <div class="flex items-center gap-2 px-4 h-10 bg-slate-50 border-b border-slate-200">
+            <div class="h-3 w-3 rounded-full bg-red-400"></div>
+            <div class="h-3 w-3 rounded-full bg-yellow-400"></div>
+            <div class="h-3 w-3 rounded-full bg-green-400"></div>
+          </div>
+
+          <img
+            src="dashboard.jpg"
+            alt="TRAX dashboard"
+            class="w-full object-cover rounded-b-3xl"
+          />
+        </div>
+
+        <div class="mt-8">
+<a
+  href="trax-info.pdf"
+  download
+  class="inline-flex items-center justify-center rounded-full bg-[#3cb650] px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#34a345] transition-colors"
+>
+  Learn More
+</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR WHOM -->
+    <section id="for-whom" class="bg-[#f5f7f9]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div class="max-w-2xl mb-10">
+          <h2 class="text-3xl font-semibold text-slate-900 mb-3">
+            Designed for every role in a driving school.
+          </h2>
+          <p class="text-sm text-slate-600">
+            TRAX serves owners, administrators and instructors, each with their own view and tools.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="mb-2 text-lg font-semibold text-slate-900">For Owners</h3>
+            <p class="text-sm text-slate-600">
+              Full business control, strategic reports, multi-branch support and full transparency over
+              performance.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="mb-2 text-lg font-semibold text-slate-900">For Administrators</h3>
+            <p class="text-sm text-slate-600">
+              Simplified management of candidates, payments, schedules, documents and daily communication.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="mb-2 text-lg font-semibold text-slate-900">For Instructors</h3>
+            <p class="text-sm text-slate-600">
+              Clear schedules, student lists, completed lessons and progress tracking – all in one panel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="bg-gradient-to-r from-[#3cb650] to-[#2c9646]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 text-center text-white">
+        <h2 class="text-3xl font-semibold mb-3">Ready to transform your driving school?</h2>
+        <p class="text-sm text-white/80 mb-6">
+          Book a 30-minute demo and see live how TRAX simplifies driving school management.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+          <button
+            class="inline-flex items-center justify-center rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-[#3cb650] shadow-sm hover:bg-slate-100"
+          >
+            Book a Demo
+          </button>
+          <button
+            class="inline-flex items-center justify-center rounded-full border border-white/80 px-6 py-2.5 text-sm font-semibold text-white hover:bg-white/10"
+          >
+            Start Free Trial
+          </button>
+        </div>
+        <p class="mt-4 text-[11px] text-white/70">
+          Support in your language · Setup within 24h
+        </p>
+      </div>
+    </section>
+
+    <!-- SUPPORTERS / PARTNERS -->
+    <section class="bg-white py-14">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-center text-sm font-semibold text-slate-500 mb-8">
+          Supported and developed in collaboration with:
+        </h2>
+
+        <!-- FLEX instead of grid to keep 4 logos nicely centered -->
+        <div class="flex flex-wrap items-center justify-center gap-8">
+          <img src="logo1.svg" alt="Logo 1" class="h-10 object-contain" />
+          <img src="logo2.svg" alt="Logo 2" class="h-10 object-contain" />
+          <img src="logo3.svg" alt="Logo 3" class="h-10 object-contain" />
+          <img src="logo4.svg" alt="Logo 4" class="h-10 object-contain" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-200" id="contact">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded-xl bg-[#3cb650] text-white text-sm font-bold"
+          >
+            T
+          </div>
+          <span class="text-xs text-slate-500">
+            © 2025 TRAX – Driving School Management System (DSMS) · Powered by A2DW
+          </span>
+        </div>
+        <div class="flex flex-wrap gap-4 text-xs text-slate-500">
+          <a href="#" class="hover:text-slate-900">Privacy</a>
+          <a href="#" class="hover:text-slate-900">Terms</a>
+          <a href="#" class="hover:text-slate-900">Help Center</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
